@@ -1,4 +1,10 @@
+/* Examen de POO.
+ * Matricule: 24NTIL01A
+ * Nom: ASA MAPA Joel Gedeon
+ * Classe: GINFO/TIC4
+ * */
 #include <iostream>
+#include <limits>
 /*#include <string>*/
 using namespace std;
 
@@ -14,7 +20,12 @@ T saisirPersonne(const string &type) {
   cout << "Nom:\t";
   getline(cin >> ws, nom);
   cout << "Age:\t";
-  cin >> age;
+  while (!(cin >> age) || age <= 0) { // Tant que l'age entre n'est pas correct.
+    cout << "Err: L'Age doit etre un entier positif" << endl;
+    cin.clear(); //reinitialise l'ettat de cin apres l'erreur d'entree
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); //ignorer tous les caracteres qui ont ete entre.
+    cout << "Age:\t";
+  }
 
   if (type == "l'Etudiant") {
     cout << "Niveau (ex: \"Licence 1\"): ";

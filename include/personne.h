@@ -1,3 +1,8 @@
+/* Examen de POO.
+ * Matricule: 24NTIL01A
+ * Nom: ASA MAPA Joel Gedeon
+ * Classe: GINFO/TIC4
+ * */
 #include <iostream>
 #include <string>
 

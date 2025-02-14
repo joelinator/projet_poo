@@ -1,8 +1,22 @@
-SET dist_dir=dist
-@ECHO ---------------------------------------------
-@ECHO COMPILATION ET GENERATION DE L'EXECUTABLE
-@ECHO ---------------------------------------------
-g++ -o "%dist_dir%\exec" main.cpp
-@ECHO Termine'. 
-
-@ECHO executez a commande: ".\dist\exec.exe" pour lancer le programme
+ REM Examen de POO.
+ REM  Matricule: 24NTIL01A
+ REM  Nom: ASA MAPA Joel Gedeon
+ REM  Classe: GINFO/TIC
+ REM
+@echo off
+:: Configuration
+echo %COMPILER%
+set SOURCE=main.cpp
+set DIST_DIR=.\dist
+set OUTPUT=%DIST_DIR%\personne
+set INCLUDE_DIR=.\include
+set CFLAGS=-I%INCLUDE_DIR% -Wall
+:: Compilation
+%COMPILER% %CFLAGS% -o %OUTPUT% %SOURCE%   
+::Afichage du resultat
+IF %errorlevel% EQU 0 (
+  echo Compilation reussie !
+  echo chemin de l'executable: %OUTPUT% 
+) ELSE (
+  echo Erreur de compilation !
+)
