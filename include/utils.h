@@ -3,7 +3,8 @@
  * Nom: ASA MAPA Joel Gedeon
  * Classe: GINFO/TIC4
  * */
-
+#ifndef UTILS_H
+#define UTILS_H
 #include <iostream>
 #include <limits>
 using namespace std;
@@ -39,3 +40,4 @@ T saisirPersonne(const string &type) {
     return T(nom, age, infoSupplementaire); // Retourne un objet Enseignant
   }
 }
+#endif

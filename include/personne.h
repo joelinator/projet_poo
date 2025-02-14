@@ -3,6 +3,9 @@
  * Nom: ASA MAPA Joel Gedeon
  * Classe: GINFO/TIC4
  * */
+
+#ifndef PERSONNE_H
+#define PERSONNE_H
 #include <iostream>
 #include <string>
 
@@ -70,3 +73,4 @@ public:
     cout << "+___________________________" << endl;
   }
 };
+#endif
