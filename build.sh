@@ -1,5 +1,10 @@
-#!/bin/bash
 
+#!/bin/bash
+#
+# examen de POO
+# MATRICULE: 24NTIL01A
+# Nom: ASA MAPA JOEL GEDEON
+# CLASSE: GINFO/TIC4
 # Configuration
 COMPILER="g++"
 SOURCE="main.cpp"
