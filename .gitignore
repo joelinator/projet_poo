@@ -2,4 +2,4 @@
  #  Matricule: 24NTIL01A
  #  Nom: ASA MAPA Joel Gedeon
  #  Classe: GINFO/TIC4
- dist/*
+ ./dist/*
