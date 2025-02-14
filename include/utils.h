@@ -3,9 +3,9 @@
  * Nom: ASA MAPA Joel Gedeon
  * Classe: GINFO/TIC4
  * */
+
 #include <iostream>
 #include <limits>
-/*#include <string>*/
 using namespace std;
 
 // Fonction pour saisir les informations d'une personne (étudiant ou enseignant)
@@ -23,7 +23,7 @@ T saisirPersonne(const string &type) {
   while (!(cin >> age) || age <= 0) { // Tant que l'age entre n'est pas correct.
     cout << "Err: L'Age doit etre un entier positif" << endl;
     cin.clear(); //reinitialise l'ettat de cin apres l'erreur d'entree
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); //ignorer tous les caracteres qui ont ete entre.
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); //ignorer tous les caracteres qui ont ete entres.
     cout << "Age:\t";
   }
 

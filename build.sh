@@ -1,10 +1,24 @@
-#!/bin/sh
-echo ---------------------------------------------
-echo COMPILATION ET GENERATION DE L'EXECUTABLE
-echo ---------------------------------------------
-g++ -o "$dist_dir/exec" main.cpp
-echo Termine'. 
+#!/bin/bash
+# Examen de POO.
+# Matricule: 24NTIL01A
+# Nom: ASA MAPA Joel Gedeon
+# Classe: GINFO/TIC
 
-echo executez a commande: "./dist/exec" pour lancer le programme
+# Configuration
+COMPILER="g++"
+SOURCE="main.cpp"
+DIST_DIR="./dist"
+OUTPUT="$DIST_DIR/personne"
+INCLUDE_DIR="./include"
+CFLAGS="-I$INCLUDE_DIR -Wall"
 
+# Compilation
+$COMPILER $CFLAGS -o "$OUTPUT" "$SOURCE"
 
+# Affichage du resultat
+if [ $? -eq 0 ]; then
+  echo "Compilation réussie !"
+  echo "Chemin de l'exécutable: $OUTPUT"
+else
+  echo "Erreur de compilation !"
+fi
